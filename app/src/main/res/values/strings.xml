@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name" translatable="false">InstaPOO</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="preview_activity_title" translatable="false">Preview de Imagen</string>
+    <string name="label_boton_guardar">Guardar</string>
+    <string name="file_provider_authority" translatable="false">tecpoo.instapoo.fileprovider</string>
+    <string-array name="hola">
+        <item>hola</item>
+    </string-array>
+    <string-array name="Weight">
+        <item>Kg</item>
+        <item>Gram</item>
+        <item>Tons</item>
+    </string-array>
+</resources>

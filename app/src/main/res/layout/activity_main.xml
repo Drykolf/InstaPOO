@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tecpoo.instapoo.gui.MainActivity"
+    >
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/camera"
+        android:layout_width="66dp"
+        android:layout_height="67dp"
+
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@android:color/secondary_text_dark_nodisable"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|center_horizontal"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+
+        android:onClick="takePictureWithCamera"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/gallery"
+        android:layout_width="66dp"
+        android:layout_height="67dp"
+
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@android:color/secondary_text_dark_nodisable"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|right"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        android:onClick="choosePictureFromGallery"/>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main" />
+
+</android.support.design.widget.CoordinatorLayout>

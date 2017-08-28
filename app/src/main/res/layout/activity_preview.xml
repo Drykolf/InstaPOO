@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tecpoo.instapoo.gui.PreviewActivity">
+
+
+    <Button
+        android:id="@+id/saveButton"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:text="@string/label_boton_guardar"
+        android:visibility="visible"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|end"
+        android:alpha="0.40"/>
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_preview" />
+
+    <Spinner
+        android:id="@+id/filtersSpinner"
+        android:layout_width="293dp"
+        android:layout_height="47dp"
+        android:layout_gravity="top|right"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/Weight"
+        android:textAlignment="center"
+        android:visibility="visible"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|left" />
+
+</android.support.design.widget.CoordinatorLayout>
